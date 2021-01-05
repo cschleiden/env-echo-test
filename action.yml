@@ -1,0 +1,8 @@
+name: "Echo Env"
+author: "cschleiden"
+branding:
+    icon: 'play'
+    color: 'orange'
+runs:
+  using: "node12"
+  main: "index.js"
