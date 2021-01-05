@@ -1,2 +1,2 @@
 console.log("Hello world")
-console.log(process.env.GITHUB_TOKEN)
+console.log(JSON.stringify(process.env))
