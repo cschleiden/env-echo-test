@@ -1,0 +1,17 @@
+name: Skip job
+
+on:
+  workflow_dispatch:
+    inputs:
+      mode:
+        default: 'run'
+        required: true
+
+jobs:
+  greet:    
+    runs-on: ubuntu-latest
+    
+    if: github.even.inputs.mode != 'run'
+
+    steps:
+    - run: echo "Hello world"
