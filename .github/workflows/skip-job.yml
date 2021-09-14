@@ -11,7 +11,7 @@ jobs:
   greet:    
     runs-on: ubuntu-latest
     
-    if: github.even.inputs.mode != 'run'
+    if: github.event.inputs.mode != 'run'
 
     steps:
     - run: echo "Hello world"
